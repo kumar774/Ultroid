@@ -267,7 +267,7 @@ async def _(event):
         reply_text = f"• **Pasted to Nekobin :** [Neko](https://nekobin.com/{key})\n• **Raw Url :** : [Raw](https://nekobin.com/raw/{key})"
     elif "dog" in what:
         q = f"dog {key}"
-        reply_text = f"• **Pasted to Dog Bin :** [Dog](https://del.dog/{key})\n• **Raw Url :** : [Raw](https://del.dog/raw/{key})"
+        reply_text = f"• **Pasted to Dog Bin :** [Dog](https://nekobin.com/{key})\n• **Raw Url :** : [Raw](https://nekobin.com/raw/{key})"
     try:
         ok = await ultroid_bot.inline_query(asst.me.username, q)
         await ok[0].click(event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True)
