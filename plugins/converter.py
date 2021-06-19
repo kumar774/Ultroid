@@ -200,7 +200,7 @@ async def _(event):
                     )
                 elif "dog" in what:
                     await xx.edit(
-                        f"**MESSAGE EXCEEDS TELEGRAM LIMITS**\n\nSo Pasted It On [DOGBIN](https://nekobin.com/{key})"
+                        f"**MESSAGE EXCEEDS TELEGRAM LIMITS**\n\nSo Pasted It On [NEKOBIN](https://nekobin.com/{key})"
                     )
             os.remove(b)
         else:
